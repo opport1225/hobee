@@ -1,25 +1,22 @@
-/* App.css */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
+/* src/App.css */
 body {
+  margin: 0;
   font-family: sans-serif;
 }
 
-.app-container {
+.app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
   min-height: 100vh;
   background-color: white;
-  flex-direction: column;
-  position: relative;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dark .app-container {
+.dark .app {
   background-color: #111;
   color: white;
 }
@@ -35,7 +32,6 @@ body {
   font-size: 16px;
   width: 300px;
   border: 1px solid #ccc;
-  outline: none;
 }
 
 .toggle-btn {
@@ -43,8 +39,9 @@ body {
   top: 20px;
   right: 20px;
   background: none;
-  border: none;
-  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
   cursor: pointer;
-  color: inherit;
 }

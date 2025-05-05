@@ -1,32 +1,27 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleTheme = () => setDarkMode(!darkMode);
+  const [darkMode, setDarkMode] = useState(false)
+  const toggleMode = () => setDarkMode(!darkMode)
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="app-container">
-        <button onClick={toggleTheme} className="toggle-btn">
+      <div className="app">
+        <button className="toggle-btn" onClick={toggleMode}>
           {darkMode ? 'Light ☀️' : 'Dark 🌙'}
         </button>
 
-        <img src="/hobee_logo2.png" alt="Hobee logo" className="logo" />
+        <img src="/hobee_logo2.png" alt="Hobee Logo" className="logo" />
 
         <input
-          type="text"
           className="search"
+          type="text"
           placeholder="What hobby are you interested in?"
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              console.log('Search:', e.target.value);
-            }
-          }}
         />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
