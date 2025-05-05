@@ -1,0 +1,50 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  flex-direction: column;
+  position: relative;
+}
+
+.dark .app-container {
+  background-color: #111;
+  color: white;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.search {
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
