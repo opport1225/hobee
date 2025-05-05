@@ -10,10 +10,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
-  min-height: 100vh;
+  padding: 60px 20px;
   background-color: white;
-  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 .dark .app {
@@ -21,12 +20,13 @@ body {
   color: white;
 }
 
-.logo {
+.logo-img {
   width: 300px;
   margin-bottom: 40px;
 }
 
 .search {
+  margin-top: 20px;
   padding: 12px 20px;
   border-radius: 30px;
   font-size: 16px;
@@ -35,13 +35,12 @@ body {
 }
 
 .toggle-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  align-self: flex-end;
+  margin-bottom: 20px;
   background: none;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 6px 12px;
-  font-size: 14px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 8px 12px;
   cursor: pointer;
 }

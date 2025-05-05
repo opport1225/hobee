@@ -1,22 +1,31 @@
+// src/App.jsx
 import { useState } from 'react'
 import './App.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
+
   const toggleMode = () => setDarkMode(!darkMode)
 
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className="app">
-        <button className="toggle-btn" onClick={toggleMode}>
+        {/* 토글 버튼 (로고 위) */}
+        <button onClick={toggleMode} className="toggle-btn">
           {darkMode ? 'Light ☀️' : 'Dark 🌙'}
         </button>
 
-        <img src="/hobee_logo2.png" alt="Hobee Logo" className="logo" />
+        {/* 로고 */}
+        <img
+          src="/hobee_logo2.png"
+          alt="HoBee Logo"
+          className="logo-img"
+        />
 
+        {/* 검색창 */}
         <input
-          className="search"
           type="text"
+          className="search"
           placeholder="What hobby are you interested in?"
         />
       </div>
